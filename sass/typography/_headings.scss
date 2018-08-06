@@ -1,3 +1,17 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font__head;
 	clear: both;
+}
+
+@for $i from 1 through 6 {
+	h#{7 - $i} {
+		font-size: 2.5em / 6 * $i;
+		line-height: 1.1;
+		margin: 0.25em 0;
+	}
 }

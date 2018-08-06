@@ -16,6 +16,8 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://use.typekit.net/xta3kxk.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 	<?php wp_head(); ?>
 </head>
@@ -25,34 +27,59 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'itransact' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$itransact_description = get_bloginfo( 'description', 'display' );
-			if ( $itransact_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $itransact_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'itransact' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+		<div class="top-bar d-none d-sm-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md">
+						<?php get_template_part('img/icons/icon', 'phone.svg'); ?> UK: 01732 529 330 | US: (888) 506-6055
+					</div>
+					<div class="col-md">
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-2',
+							'menu_id'        => 'header-menu',
+							'menu_class'		 => 'nav justify-content-end'
+						) );
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-lg navbar-light">
+						<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<?php
+							get_template_part('img/inline', 'logo.svg');
+						?>
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-end" id="navbar">
+							<?php
+						/*	wp_nav_menu( array(
+								'theme_location' => 'menu-1',
+								'menu_id'        => 'main-menu',
+								'menu_class'		 => 'navbar-nav justify-content-end'
+							) ); */
+							wp_nav_menu( array(
+								'theme_location' => 'navbar',
+								'container'      => false,
+								'menu_class'     => 'nav navbar-nav',
+								'fallback_cb'    => '__return_false',
+								'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+								'depth'          => 2,
+								'walker'         => new bootstrap_4_walker_nav_menu()
+							) );
+							?>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content container">
+		<div class="row">
