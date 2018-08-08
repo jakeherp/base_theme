@@ -20,6 +20,32 @@
 				<?php endif; ?>
 			</div>
 			<div class="row">
+				<div class="col">
+					<?php
+						$social_sites = ct_itransact_social_array();
+
+						foreach ( $social_sites as $social_site => $profile ) {
+							if ( strlen( get_theme_mod( $social_site ) ) > 0 ) {
+								$active_sites[ $social_site ] = $social_site;
+							}
+						}
+
+						if ( ! empty( $active_sites ) ) {
+							echo '<ul class="social">';
+							foreach ( $active_sites as $key => $active_site ) {
+										$class = 'fa fa-' . $active_site; ?>
+								<li class="<?php echo esc_attr( $active_site ); ?>">
+									<a target="_blank" href="<?php echo esc_url( get_theme_mod( $key ) ); ?>">
+										<i class="<?php echo esc_attr( $class ); ?>" title="<?php echo esc_attr( $active_site ); ?>"></i>
+									</a>
+								</li>
+							<?php }
+							echo "</ul>";
+						}
+					?>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-sm">
 					<div class="site-info">
 						&copy; <?php echo date('Y') . ' ' . __('itransact Media') ?>
