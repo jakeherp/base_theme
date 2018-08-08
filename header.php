@@ -32,7 +32,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-7">
-						<?php get_template_part('img/icons/icon', 'phone.svg'); ?> UK: 01732 529 330 | US: (888) 506-6055
+						<i class="fas fa-phone"></i> UK: 01732 529 330 | US: (888) 506-6055
 					</div>
 					<div class="col-sm-5">
 						<?php

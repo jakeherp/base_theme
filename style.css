@@ -353,7 +353,7 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: "proxima-nova" sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -365,7 +365,8 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "raleway" sans-serif; }
+  font-family: "raleway", sans-serif;
+  font-weight: 800; }
 
 h6 {
   font-size: 0.4166666667em;
@@ -802,7 +803,8 @@ header#masthead {
           border: 1px solid #e09606; }
         header#masthead ul#menu-main-menu > li:last-child a {
           color: #fff;
-          font-family: "raleway" sans-serif; }
+          font-family: "raleway", sans-serif;
+          font-weight: 800; }
 
 .btn-primary {
   background: linear-gradient(to bottom right, #fbde25, #f9a520);
@@ -826,6 +828,8 @@ footer.site-footer {
     padding: 0; }
     footer.site-footer ul li {
       margin-bottom: 0.2rem; }
+  footer.site-footer .site-info {
+    text-align: center; }
 
 aside h2 {
   font-size: 1.5rem;
