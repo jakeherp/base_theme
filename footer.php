@@ -10,11 +10,15 @@
  */
 
 ?>
-		</div>
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
 		<div class="container">
+			<div class="row">
+				<?php if ( is_active_sidebar( 'footer_widgets' ) ) : ?>
+					<?php dynamic_sidebar( 'footer_widgets' ); ?>
+				<?php endif; ?>
+			</div>
 			<div class="row">
 				<div class="col-sm">
 					<div class="site-info">

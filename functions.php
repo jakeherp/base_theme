@@ -212,3 +212,17 @@ class bootstrap_4_walker_nav_menu extends Walker_Nav_menu {
 
 }
 register_nav_menu('navbar', __('Navbar', 'itransact'));
+
+function footer_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Footer',
+		'id'            => 'footer_widgets',
+		'before_widget' => '<div class="col">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'footer_widgets_init' );

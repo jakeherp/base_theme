@@ -18,6 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.typekit.net/xta3kxk.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 	<?php wp_head(); ?>
 </head>
@@ -27,13 +28,13 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'itransact' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="top-bar d-none d-sm-block">
+		<div class="top-bar d-none d-sm-block bg-light">
 			<div class="container">
 				<div class="row">
-					<div class="col-md">
+					<div class="col-sm-7">
 						<?php get_template_part('img/icons/icon', 'phone.svg'); ?> UK: 01732 529 330 | US: (888) 506-6055
 					</div>
-					<div class="col-md">
+					<div class="col-sm-5">
 						<?php
 						wp_nav_menu( array(
 							'theme_location' => 'menu-2',
@@ -81,5 +82,4 @@
 		</div>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content container">
-		<div class="row">
+	<div id="content" class="site-content">
