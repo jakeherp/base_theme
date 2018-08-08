@@ -756,35 +756,45 @@ a {
 .bypostauthor {
   display: block; }
 
-svg.icon {
-  width: 1em; }
-
 a,
 a:visited {
-  color: #555; }
+  color: #555;
+  transition: .2s; }
   a:hover,
   a:visited:hover {
     color: #000;
     text-decoration: none; }
 
+.top-bar {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #eee; }
+  .top-bar ul#header-menu {
+    margin: 0; }
+    .top-bar ul#header-menu li {
+      display: inline-block;
+      margin: 0 0.5rem;
+      transition: 1s; }
+
 header#masthead {
-  border-bottom: 1px solid #f3f3f3; }
-  header#masthead .top-bar {
-    width: 100%;
-    padding: 0.5rem 0;
-    font-size: 0.8rem;
-    border-bottom: 1px solid #eee; }
-    header#masthead .top-bar ul#header-menu {
-      margin: 0; }
-      header#masthead .top-bar ul#header-menu li {
-        display: inline-block;
-        margin: 0 0.5rem;
-        transition: 1s; }
+  border-bottom: 1px solid #f3f3f3;
+  background: rgba(255, 255, 255, 0.96); }
+  header#masthead.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; }
   header#masthead .navbar {
     padding: 0.5rem 0; }
     header#masthead .navbar svg {
       max-width: 100%;
-      width: 240px; }
+      width: 240px;
+      opacity: .9;
+      transition: .2s; }
+      header#masthead .navbar svg:hover {
+        opacity: 1; }
     header#masthead .navbar li.dropdown:hover ul.dropdown-menu {
       display: block; }
   header#masthead ul#menu-main-menu {
@@ -850,6 +860,23 @@ aside ul {
     .container-full .row .col {
       padding-left: 0;
       padding-right: 0; }
+
+blockquote {
+  font-style: italic;
+  padding: .5em;
+  margin: .5rem;
+  font-size: 1.1em;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNFRUVFRUU7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTQ2NCwzMkgzMzZjLTI2LjUsMC00OCwyMS41LTQ4LDQ4djEyOGMwLDI2LjUsMjEuNSw0OCw0OCw0OGg4MHY2NGMwLDM1LjMtMjguNyw2NC02NCw2NGgtOGMtMTMuMywwLTI0LDEwLjctMjQsMjR2NDhjMCwxMy4zLDEwLjcsMjQsMjQsMjRoOGM4OC40LDAsMTYwLTcxLjYsMTYwLTE2MFY4MEM1MTIsNTMuNSw0OTAuNSwzMiw0NjQsMzJ6IE0xNzYsMzJINDhDMjEuNSwzMiwwLDUzLjUsMCw4MHYxMjhjMCwyNi41LDIxLjUsNDgsNDgsNDhoODB2NjRjMCwzNS4zLTI4LjcsNjQtNjQsNjRoLThjLTEzLjMsMC0yNCwxMC43LTI0LDI0djQ4YzAsMTMuMywxMC43LDI0LDI0LDI0aDhjODguNCwwLDE2MC03MS42LDE2MC0xNjBWODBDMjI0LDUzLjUsMjAyLjUsMzIsMTc2LDMyeiIvPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-size: 4rem; }
+
+.btn-rounded {
+  border-radius: 99px; }
+.btn-outline-primary {
+  border: 1px solid #f9a520; }
+  .btn-outline-primary:hover {
+    background: linear-gradient(to bottom right, #fbda0c, #f89b07);
+    border: 1px solid #e09606; }
 
 /*--------------------------------------------------------------
 # Infinite scroll

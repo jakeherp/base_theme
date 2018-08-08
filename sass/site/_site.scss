@@ -9,40 +9,51 @@
 --------------------------------------------------------------*/
 
 @import 'primary/comments';
-svg.icon {
-	width: 1em;
-}
-
 a,
 a:visited {
 	color: #555;
+	transition: .2s;
 	&:hover {
 		color: #000;
 		text-decoration: none;
 	}
 }
 
+.top-bar {
+	width: 100%;
+	padding: 0.5rem 0;
+	font-size: 0.8rem;
+	border-bottom: 1px solid #eee;
+	ul#header-menu {
+		margin: 0;
+		li {
+			display: inline-block;
+			margin: 0 0.5rem;
+			transition: 1s;
+		}
+	}
+}
+
 header#masthead {
 	border-bottom: 1px solid #f3f3f3;
-	.top-bar {
-		width: 100%;
-		padding: 0.5rem 0;
-		font-size: 0.8rem;
-		border-bottom: 1px solid #eee;
-		ul#header-menu {
-			margin: 0;
-			li {
-				display: inline-block;
-				margin: 0 0.5rem;
-				transition: 1s;
-			}
-		}
+	background: rgba(255, 255, 255, 0.96);
+	&.sticky {
+		position: sticky;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
 	}
 	.navbar {
 		padding: 0.5rem 0;
 		svg {
 			max-width: 100%;
 			width: 240px;
+			opacity: .9;
+			transition: .2s;
+			&:hover {
+				opacity: 1;
+			}
 		}
 		li.dropdown:hover ul.dropdown-menu {
 			display: block;
@@ -129,6 +140,29 @@ aside {
 		.col {
 			padding-left: 0;
 			padding-right: 0;
+		}
+	}
+}
+
+blockquote {
+	font-style: italic;
+	padding: .5em;
+	margin: .5rem;
+	font-size: 1.1em;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNFRUVFRUU7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTQ2NCwzMkgzMzZjLTI2LjUsMC00OCwyMS41LTQ4LDQ4djEyOGMwLDI2LjUsMjEuNSw0OCw0OCw0OGg4MHY2NGMwLDM1LjMtMjguNyw2NC02NCw2NGgtOGMtMTMuMywwLTI0LDEwLjctMjQsMjR2NDhjMCwxMy4zLDEwLjcsMjQsMjQsMjRoOGM4OC40LDAsMTYwLTcxLjYsMTYwLTE2MFY4MEM1MTIsNTMuNSw0OTAuNSwzMiw0NjQsMzJ6IE0xNzYsMzJINDhDMjEuNSwzMiwwLDUzLjUsMCw4MHYxMjhjMCwyNi41LDIxLjUsNDgsNDgsNDhoODB2NjRjMCwzNS4zLTI4LjcsNjQtNjQsNjRoLThjLTEzLjMsMC0yNCwxMC43LTI0LDI0djQ4YzAsMTMuMywxMC43LDI0LDI0LDI0aDhjODguNCwwLDE2MC03MS42LDE2MC0xNjBWODBDMjI0LDUzLjUsMjAyLjUsMzIsMTc2LDMyeiIvPjwvc3ZnPg==);
+	background-repeat: no-repeat;
+	background-size: 4rem;
+}
+
+.btn {
+	&-rounded {
+		border-radius: 99px;
+	}
+	&-outline-primary {
+		border: 1px solid #f9a520;
+		&:hover {
+			background: linear-gradient( to bottom right, darken(#fbde25, 5%), darken(#f9a520, 5%));
+			border: 1px solid darken(#f9af20, 10%);
 		}
 	}
 }

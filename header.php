@@ -27,25 +27,26 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'itransact' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="top-bar d-none d-sm-block bg-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-7">
-						<i class="fas fa-phone"></i> UK: 01732 529 330 | US: (888) 506-6055
-					</div>
-					<div class="col-sm-5">
-						<?php
-						wp_nav_menu( array(
-							'theme_location' => 'menu-2',
-							'menu_id'        => 'header-menu',
-							'menu_class'		 => 'nav justify-content-end'
-						) );
-						?>
-					</div>
+	<div class="top-bar d-none d-sm-block bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+					<i class="fas fa-phone"></i> UK: 01732 529 330 | US: (888) 506-6055
+				</div>
+				<div class="col-sm-5">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-2',
+						'menu_id'        => 'header-menu',
+						'menu_class'		 => 'nav justify-content-end'
+					) );
+					?>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
