@@ -60,11 +60,6 @@
 						</button>
 						<div class="collapse navbar-collapse justify-content-end" id="navbar">
 							<?php
-						/*	wp_nav_menu( array(
-								'theme_location' => 'menu-1',
-								'menu_id'        => 'main-menu',
-								'menu_class'		 => 'navbar-nav justify-content-end'
-							) ); */
 							wp_nav_menu( array(
 								'theme_location' => 'navbar',
 								'container'      => false,
