@@ -31,7 +31,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-7">
-					<i class="fas fa-phone"></i> UK: 01732 529 330 | US: (888) 506-6055
+					<i class="fas fa-phone"></i> <?php _e('UK: <a href="tel:+441732529330">01732 529 330</a> | US: <a href="tel:+1-888-506-6055">(888) 506-6055</a>'); ?>
 				</div>
 				<div class="col-sm-5">
 					<?php

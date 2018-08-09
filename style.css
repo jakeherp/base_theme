@@ -816,14 +816,6 @@ header#masthead {
           font-family: "raleway", sans-serif;
           font-weight: 800; }
 
-.btn-primary {
-  background: linear-gradient(to bottom right, #fbde25, #f9a520);
-  border: 1px solid #f9af20;
-  transition: 0.5s; }
-  .btn-primary:hover {
-    background: linear-gradient(to bottom right, #fbda0c, #f89b07);
-    border: 1px solid #e09606; }
-
 footer.site-footer {
   background: #333;
   color: #f9f9f9;
@@ -909,8 +901,17 @@ blockquote {
 .btn-rounded {
   border-radius: 99px; }
 .btn-outline-primary {
-  border: 1px solid #f9a520; }
+  border: 1px solid #f9a520;
+  padding: .5rem 1.5rem; }
   .btn-outline-primary:hover {
+    background: linear-gradient(to bottom right, #fbda0c, #f89b07);
+    border: 1px solid #e09606; }
+.btn-primary {
+  background: linear-gradient(to bottom right, #fbde25, #f9a520);
+  border: 1px solid #f9af20;
+  padding: .5rem 1.5rem;
+  transition: 0.5s; }
+  .btn-primary:hover {
     background: linear-gradient(to bottom right, #fbda0c, #f89b07);
     border: 1px solid #e09606; }
 
