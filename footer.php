@@ -52,6 +52,17 @@
 					</div><!-- .site-info -->
 				</div>
 			</div>
+			<div class="row d-block d-sm-none">
+				<div class="col-sm">
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'legal',
+							'menu_id'        => 'legal-menu',
+							'menu_class'		 => 'nav justify-content-center'
+						) );
+					?>
+				</div>
+			</div>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

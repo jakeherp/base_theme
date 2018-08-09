@@ -153,6 +153,9 @@ footer.site-footer {
 			}
 		}
 	}
+	ul#legal-menu li {
+		padding: 1rem;
+	}
 }
 
 aside {
@@ -195,6 +198,7 @@ blockquote {
 .btn {
 	&-rounded {
 		border-radius: 99px;
+		padding: .5rem 1.5rem;
 	}
 	&-outline-primary {
 		border: 1px solid #f9a520;
@@ -207,7 +211,6 @@ blockquote {
 	&-primary {
 		background: linear-gradient(to bottom right, #fbde25, #f9a520);
 		border: 1px solid #f9af20;
-		padding: .5rem 1.5rem;
 		transition: 0.5s;
 		&:hover {
 			background: linear-gradient( to bottom right, darken(#fbde25, 5%), darken(#f9a520, 5%));

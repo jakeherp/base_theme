@@ -186,6 +186,8 @@ class bootstrap_4_walker_nav_menu extends Walker_Nav_menu {
 
 }
 register_nav_menu('navbar', __('Navbar', 'itransact'));
+register_nav_menu('legal', __('Legal Menu', 'itransact'));
+register_nav_menu('header', __('Header Menu', 'itransact'));
 
 function footer_widgets_init() {
 

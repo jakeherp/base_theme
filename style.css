@@ -868,6 +868,8 @@ footer.site-footer {
         width: 2rem;
         height: 2rem;
         border-radius: 99px; }
+  footer.site-footer ul#legal-menu li {
+    padding: 1rem; }
 
 aside h2 {
   font-size: 1.5rem;
@@ -899,7 +901,8 @@ blockquote {
   background-size: 4rem; }
 
 .btn-rounded {
-  border-radius: 99px; }
+  border-radius: 99px;
+  padding: .5rem 1.5rem; }
 .btn-outline-primary {
   border: 1px solid #f9a520;
   padding: .5rem 1.5rem; }
@@ -909,7 +912,6 @@ blockquote {
 .btn-primary {
   background: linear-gradient(to bottom right, #fbde25, #f9a520);
   border: 1px solid #f9af20;
-  padding: .5rem 1.5rem;
   transition: 0.5s; }
   .btn-primary:hover {
     background: linear-gradient(to bottom right, #fbda0c, #f89b07);

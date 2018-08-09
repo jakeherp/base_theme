@@ -27,16 +27,16 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'itransact' ); ?></a>
 
-	<div class="top-bar d-none d-sm-block bg-light">
+	<div class="top-bar bg-light">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-7">
-					<i class="fas fa-phone"></i> <?php _e('UK: <a href="tel:+441732529330">01732 529 330</a> | US: <a href="tel:+1-888-506-6055">(888) 506-6055</a>'); ?>
+				<div class="col">
+					<i class="fas fa-phone"></i> <?php _e('UK: <a href="tel:+441732529330">01732 529 330</a> | US: <a href="tel:+1-888-506-6055">(888) 506-6055</a>', 'itransact'); ?>
 				</div>
-				<div class="col-sm-5">
+				<div class="col-sm-5 d-none d-sm-block">
 					<?php
 					wp_nav_menu( array(
-						'theme_location' => 'menu-2',
+						'theme_location' => 'header',
 						'menu_id'        => 'header-menu',
 						'menu_class'		 => 'nav justify-content-end'
 					) );
