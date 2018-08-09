@@ -39,6 +39,7 @@ header#masthead {
 	background: rgba(255, 255, 255, 0.96);
 	&.sticky {
 		position: sticky;
+		position: -webkit-sticky;
 		top: 0;
 		left: 0;
 		right: 0;
