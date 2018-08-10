@@ -66,13 +66,13 @@ header#masthead {
 			padding: 0 0.5rem;
 			text-align: center;
 			&:last-child {
-				background: linear-gradient(to bottom right, #fbde25, #f9a520);
+				background: linear-gradient(to bottom right, #f4e600, #f18519);
 				border: 1px solid #f9af20;
 				border-radius: 99px;
 				padding: 0 1rem;
 				transition: 0.2s;
 				&:hover {
-					background: linear-gradient( to bottom right, darken(#fbde25, 5%), darken(#f9a520, 5%));
+					background: linear-gradient( to bottom right, darken(#f4e600, 3%), darken(#f18519, 3%));
 					border: 1px solid darken(#f9af20, 10%);
 				}
 				a {
@@ -202,20 +202,26 @@ blockquote {
 		padding: .5rem 1.5rem;
 	}
 	&-outline-primary {
-		border: 1px solid #f9a520;
+		border: 1px solid #fff;
 		padding: .5rem 1.5rem;
 		&:hover {
-			background: linear-gradient( to bottom right, darken(#fbde25, 5%), darken(#f9a520, 5%));
+			background: linear-gradient( to bottom right, darken(#f4e600, 3%), darken(#f18519, 3%));
 			border: 1px solid darken(#f9af20, 10%);
 		}
 	}
 	&-primary {
-		background: linear-gradient(to bottom right, #fbde25, #f9a520);
+		background: linear-gradient(to bottom right, #f4e600, #f18519);
 		border: 1px solid #f9af20;
 		transition: 0.5s;
 		&:hover {
-			background: linear-gradient( to bottom right, darken(#fbde25, 5%), darken(#f9a520, 5%));
+			background: linear-gradient( to bottom right, darken(#f4e600, 3%), darken(#f18519, 3%));
 			border: 1px solid darken(#f9af20, 10%);
 		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.top-bar .col {
+		text-align: center;
 	}
 }

@@ -804,13 +804,13 @@ header#masthead {
       padding: 0 0.5rem;
       text-align: center; }
       header#masthead ul#menu-main-menu > li:last-child {
-        background: linear-gradient(to bottom right, #fbde25, #f9a520);
+        background: linear-gradient(to bottom right, #f4e600, #f18519);
         border: 1px solid #f9af20;
         border-radius: 99px;
         padding: 0 1rem;
         transition: 0.2s; }
         header#masthead ul#menu-main-menu > li:last-child:hover {
-          background: linear-gradient(to bottom right, #fbda0c, #f89b07);
+          background: linear-gradient(to bottom right, #e5d800, #ec7d0e);
           border: 1px solid #e09606; }
         header#masthead ul#menu-main-menu > li:last-child a {
           color: #fff;
@@ -905,19 +905,22 @@ blockquote {
   border-radius: 99px;
   padding: .5rem 1.5rem; }
 .btn-outline-primary {
-  border: 1px solid #f9a520;
+  border: 1px solid #fff;
   padding: .5rem 1.5rem; }
   .btn-outline-primary:hover {
-    background: linear-gradient(to bottom right, #fbda0c, #f89b07);
+    background: linear-gradient(to bottom right, #e5d800, #ec7d0e);
     border: 1px solid #e09606; }
 .btn-primary {
-  background: linear-gradient(to bottom right, #fbde25, #f9a520);
+  background: linear-gradient(to bottom right, #f4e600, #f18519);
   border: 1px solid #f9af20;
   transition: 0.5s; }
   .btn-primary:hover {
-    background: linear-gradient(to bottom right, #fbda0c, #f89b07);
+    background: linear-gradient(to bottom right, #e5d800, #ec7d0e);
     border: 1px solid #e09606; }
 
+@media only screen and (max-width: 768px) {
+  .top-bar .col {
+    text-align: center; } }
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
