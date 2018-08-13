@@ -12,7 +12,7 @@
 a,
 a:visited {
 	color: #555;
-	transition: .2s;
+	transition: 0.2s;
 	&:hover {
 		color: #000;
 		text-decoration: none;
@@ -50,8 +50,8 @@ header#masthead {
 		svg {
 			max-width: 100%;
 			width: 240px;
-			opacity: .9;
-			transition: .2s;
+			opacity: 0.9;
+			transition: 0.2s;
 			&:hover {
 				opacity: 1;
 			}
@@ -62,7 +62,7 @@ header#masthead {
 	}
 	ul#menu-main-menu {
 		margin: 0;
-		&>li {
+		& > li {
 			padding: 0 0.5rem;
 			text-align: center;
 			&:last-child {
@@ -72,7 +72,11 @@ header#masthead {
 				padding: 0 1rem;
 				transition: 0.2s;
 				&:hover {
-					background: linear-gradient( to bottom right, darken(#f4e600, 3%), darken(#f18519, 3%));
+					background: linear-gradient(
+						to bottom right,
+						darken(#f4e600, 3%),
+						darken(#f18519, 3%)
+					);
 					border: 1px solid darken(#f9af20, 10%);
 				}
 				a {
@@ -122,13 +126,13 @@ footer.site-footer {
 			border-radius: 99px;
 			text-align: center;
 			&.linkedin:hover {
-				background: #0077B5;
+				background: #0077b5;
 				a {
 					color: #fff;
 				}
 			}
 			&.facebook:hover {
-				background: #3B5998;
+				background: #3b5998;
 				a {
 					color: #fff;
 				}
@@ -188,8 +192,8 @@ aside {
 
 blockquote {
 	font-style: italic;
-	padding: .5em;
-	margin: .5rem;
+	padding: 0.5em;
+	margin: 0.5rem;
 	font-size: 1.1em;
 	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+LnN0MHtmaWxsOiNFRUVFRUU7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTQ2NCwzMkgzMzZjLTI2LjUsMC00OCwyMS41LTQ4LDQ4djEyOGMwLDI2LjUsMjEuNSw0OCw0OCw0OGg4MHY2NGMwLDM1LjMtMjguNyw2NC02NCw2NGgtOGMtMTMuMywwLTI0LDEwLjctMjQsMjR2NDhjMCwxMy4zLDEwLjcsMjQsMjQsMjRoOGM4OC40LDAsMTYwLTcxLjYsMTYwLTE2MFY4MEM1MTIsNTMuNSw0OTAuNSwzMiw0NjQsMzJ6IE0xNzYsMzJINDhDMjEuNSwzMiwwLDUzLjUsMCw4MHYxMjhjMCwyNi41LDIxLjUsNDgsNDgsNDhoODB2NjRjMCwzNS4zLTI4LjcsNjQtNjQsNjRoLThjLTEzLjMsMC0yNCwxMC43LTI0LDI0djQ4YzAsMTMuMywxMC43LDI0LDI0LDI0aDhjODguNCwwLDE2MC03MS42LDE2MC0xNjBWODBDMjI0LDUzLjUsMjAyLjUsMzIsMTc2LDMyeiIvPjwvc3ZnPg==);
 	background-repeat: no-repeat;
@@ -199,13 +203,17 @@ blockquote {
 .btn {
 	&-rounded {
 		border-radius: 99px;
-		padding: .5rem 1.5rem;
+		padding: 0.5rem 1.5rem;
 	}
 	&-outline-primary {
 		border: 1px solid #fff;
-		padding: .5rem 1.5rem;
+		padding: 0.5rem 1.5rem;
 		&:hover {
-			background: linear-gradient( to bottom right, darken(#f4e600, 3%), darken(#f18519, 3%));
+			background: linear-gradient(
+				to bottom right,
+				darken(#f4e600, 3%),
+				darken(#f18519, 3%)
+			);
 			border: 1px solid darken(#f9af20, 10%);
 		}
 	}
@@ -214,7 +222,11 @@ blockquote {
 		border: 1px solid #f9af20;
 		transition: 0.5s;
 		&:hover {
-			background: linear-gradient( to bottom right, darken(#f4e600, 3%), darken(#f18519, 3%));
+			background: linear-gradient(
+				to bottom right,
+				darken(#f4e600, 3%),
+				darken(#f18519, 3%)
+			);
 			border: 1px solid darken(#f9af20, 10%);
 		}
 	}
@@ -226,8 +238,8 @@ blockquote {
 	}
 }
 
-.clients{
-	svg{
+.clients {
+	svg {
 		fill: #999;
 	}
-}12
+}
