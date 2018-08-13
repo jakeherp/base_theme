@@ -921,6 +921,9 @@ blockquote {
 @media only screen and (max-width: 768px) {
   .top-bar .col {
     text-align: center; } }
+.clients svg {
+  fill: #999; }
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
