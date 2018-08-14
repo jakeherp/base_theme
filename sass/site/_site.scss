@@ -70,13 +70,12 @@ header#masthead {
 				border: 1px solid #f9af20;
 				border-radius: 99px;
 				padding: 0 1rem;
-				transition: 0.2s;
+				transition: 0.3s;
+				opacity: 0.8;
+				min-width: 7rem;
+				margin: 0 auto;
 				&:hover {
-					background: linear-gradient(
-						to bottom right,
-						darken(#f4e600, 3%),
-						darken(#f18519, 3%)
-					);
+					opacity: 1;
 					border: 1px solid darken(#f9af20, 10%);
 				}
 				a {
@@ -221,12 +220,9 @@ blockquote {
 		background: linear-gradient(to bottom right, #f4e600, #f18519);
 		border: 1px solid #f9af20;
 		transition: 0.5s;
+		opacity: 0.9;
 		&:hover {
-			background: linear-gradient(
-				to bottom right,
-				darken(#f4e600, 3%),
-				darken(#f18519, 3%)
-			);
+			opacity: 1;
 			border: 1px solid darken(#f9af20, 10%);
 		}
 	}
